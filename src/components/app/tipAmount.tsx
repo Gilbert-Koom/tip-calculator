@@ -1,4 +1,4 @@
-
+import { useEffect, useState } from 'react';
 
 interface AmountProps {
   amount: string;
@@ -6,13 +6,19 @@ interface AmountProps {
 }
 
 function Amount({ amount,type }: AmountProps) {
+  const [value, setValue] = useState(0);
+  useEffect(()=>{
+    !isNaN(parseFloat(amount)) ? setValue(parseFloat(amount)) : setValue(0);
+
+  },[amount])
+
   return (
     <div>
       <div>
         <p>{type}</p>
         <p>/ person</p>
       </div>
-      <p>${amount}</p>
+      <p>${value.toFixed(2)}</p>
     </div>
   );
   
