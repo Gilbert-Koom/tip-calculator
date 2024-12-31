@@ -1,11 +1,13 @@
-import { Button } from "./components/ui/button"
+import Calculator from "./components/app/calculator"
 
 function App() {
 
   return (
     <>
-    <p className="text-red-950">hi</p>
-    <Button>hello ama ghana</Button>
+      <p>spli</p>
+      <p>tter</p>
+      <Calculator />
+
     </>
   )
 }
