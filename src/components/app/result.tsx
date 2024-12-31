@@ -12,11 +12,11 @@ function Results() {
     console.log(tip);    
     console.log(bill); 
     console.log(people);
-    const {tipAmount,total}=resultCalc();
+    const {fixedTipAmount,fixedTotal}=resultCalc();
     return (
         <div>
-            <Amount amount={tipAmount} type={'Tip Amount'}/>
-            <Amount amount={total} type={'Total'}/>
+            <Amount amount={fixedTipAmount} type={'Tip Amount'}/>
+            <Amount amount={fixedTotal} type={'Total'}/>
             <Button>reset</Button>
         </div>
     );

@@ -1,7 +1,7 @@
 
 
 interface AmountProps {
-  amount: number;
+  amount: string;
   type: string;
 }
 
@@ -12,7 +12,7 @@ function Amount({ amount,type }: AmountProps) {
         <p>{type}</p>
         <p>/ person</p>
       </div>
-      <p>{amount}</p>
+      <p>${amount}</p>
     </div>
   );
   
