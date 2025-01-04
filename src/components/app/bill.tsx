@@ -11,6 +11,7 @@ function Bill() {
       <Input type="number"
         onChange={(e)=>updater(parseFloat(e.target.value))}
         value={bill}
+        min={0}
       />
     </div>
   );
