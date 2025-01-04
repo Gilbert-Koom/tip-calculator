@@ -12,7 +12,7 @@ function Tip() {
   const [showCustom,setShowCustom]=useState(false);
   return(
     <div>
-      <Label htmlFor="tip">Select Tip</Label>
+      <Label htmlFor="tip">Select Tip %</Label>
       <div className="grid grid-cols-2 gap-2 md:grid-cols-3">
         <Button onClick={()=>tipUpdater(5)}>5%</Button>
         <Button onClick={()=>tipUpdater(10)}>10%</Button>

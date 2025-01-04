@@ -3,7 +3,7 @@ import Results from "./result";
 
 function Calculator() {
   return (
-    <div>
+    <div className="md:grid grid-cols-2 bg-green-600">
       <InputFields />
       <Results />
     </div>
