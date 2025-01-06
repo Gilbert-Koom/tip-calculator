@@ -11,21 +11,22 @@ function Tip() {
   const tipUpdater=useTipStore(state=>state.increase);
   const [showCustom,setShowCustom]=useState(false);
   return(
-    <div>
+    <div className="my-[6%]">
       <Label htmlFor="tip">Select Tip %</Label>
-      <div className="grid grid-cols-2 gap-2 md:grid-cols-3">
-        <Button onClick={()=>tipUpdater(5)}>5%</Button>
-        <Button onClick={()=>tipUpdater(10)}>10%</Button>
-        <Button onClick={()=>tipUpdater(15)}>15%</Button>
-        <Button onClick={()=>tipUpdater(25)}>25%</Button>
-        <Button onClick={()=>tipUpdater(50)}>50%</Button>
+      <div className="grid grid-cols-2 gap-2 md:grid-cols-3 mt-[2%]">
+        <Button className="rounded-[5px]" onClick={()=>tipUpdater(5)}>5%</Button>
+        <Button className="rounded-[5px]" onClick={()=>tipUpdater(10)}>10%</Button>
+        <Button className="rounded-[5px]" onClick={()=>tipUpdater(15)}>15%</Button>
+        <Button className="rounded-[5px]" onClick={()=>tipUpdater(25)}>25%</Button>
+        <Button className="rounded-[5px]" onClick={()=>tipUpdater(50)}>50%</Button>
         {showCustom ? (
           <Input type="number" id="tip" placeholder="Custom"
           value={tip}
+          className="rounded-[5px]"
           onChange={(e)=>tipUpdater(Number(e.target.value))} 
           />
         ) : (
-          <Button onClick={()=>setShowCustom(!showCustom)}>Custom</Button>
+          <Button onClick={()=>setShowCustom(!showCustom)} className="rounded-[5px]">Custom</Button>
         )}
         
         

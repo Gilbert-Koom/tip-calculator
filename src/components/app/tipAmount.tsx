@@ -13,7 +13,7 @@ function Amount({ amount,type }: AmountProps) {
   },[amount])
 
   return (
-    <div>
+    <div className='w-[94%] m-auto flex justify-between mb-[10%]'>
       <div>
         <p>{type}</p>
         <p>/ person</p>

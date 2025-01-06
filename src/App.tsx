@@ -3,9 +3,9 @@ import Calculator from "./components/app/calculator"
 function App() {
 
   return (
-    <div className="bg-red-200">
-      <p>spli</p>
-      <p>tter</p>
+    <div>
+      <p className="text-center">spli</p>
+      <p className="text-center">tter</p>
       <Calculator />
 
     </div>

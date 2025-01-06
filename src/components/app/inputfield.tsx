@@ -4,7 +4,7 @@ import Tip from "./tip";
 
 function InputFields() {
   return (
-    <div>
+    <div className="pl-[5%] pr-[5%] rounded-lg">
       <Bill />
       <Tip />
       <People />

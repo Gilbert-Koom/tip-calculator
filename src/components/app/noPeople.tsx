@@ -3,6 +3,7 @@ import { Input } from "../ui/input";
 import usePeopleStore from "./store/peopleStore";
 import { useEffect, useState } from "react";
 import './people.css'
+import personIcon from './assets/icon-person.svg'
 
 function People() {
   const people=usePeopleStore(state=>state.people);
@@ -27,14 +28,22 @@ function People() {
 
 
   return (
-    <div>
-      <Label htmlFor="people">Number of People</Label>
-      <small id={style1}>Can't be zero</small>
-      <Input type="number" 
-        onChange={(e)=>updater(parseFloat(e.target.value))}
-        value={people}
-        min={0}
-      />
+    <div className="mb-[8%]">
+      <div className="flex justify-between mb-[2%]">
+        <Label htmlFor="people">Number of People</Label>
+        <small id={style1}>Can't be zero</small>
+      </div>
+      <div className="relative inline-block w-full">
+        <Input type="number" 
+          className="rounded-[5px] w-full"
+          onChange={(e)=>updater(parseFloat(e.target.value))}
+          value={people}
+          min={0}
+        />
+        <p className="absolute top-0 left-0 mr-1 w-[10%]">
+          <img src={personIcon} alt="Person Sign" className="m-auto mt-2"/>
+        </p>
+      </div>
     </div>
   );
   
