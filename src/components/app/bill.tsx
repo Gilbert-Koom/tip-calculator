@@ -11,7 +11,7 @@ function Bill() {
       <Label htmlFor="email" className="block mb-[2%]">Bill</Label>
       <div className="relative inline-block w-full">
         <Input type="number"
-          className="rounded-[5px] w-full"
+          className="bg-[#f3f8fb] rounded-[5px] w-full"
           onChange={(e)=>updater(parseFloat(e.target.value))}
           value={bill}
           min={0}

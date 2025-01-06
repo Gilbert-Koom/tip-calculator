@@ -27,12 +27,12 @@ function Results() {
         }
     },[fixedTipAmount,fixedTotal,people])
     return (
-        <div className="w-[90%] m-auto bg-slate-600 h-[85%] pt-[7%]">
+        <div className="w-[90%] m-auto bg-[#00474b] h-[85%] pt-[7%]">
             <Amount amount={tipAmt} type={'Tip Amount'}/>
             <Amount amount={tipTotal} type={'Total'}/>
             <div className="flex justify-center">
                 <Button
-                    className="bg-red-950 w-[92%] rounded-[5px]"
+                    className="bg-[#0d686d] w-[92%] rounded-[5px]"
                     onClick={()=>{
                         update(0);
                         updateBill(0);

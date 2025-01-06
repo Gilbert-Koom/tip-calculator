@@ -15,10 +15,10 @@ function Amount({ amount,type }: AmountProps) {
   return (
     <div className='w-[94%] m-auto flex justify-between mb-[10%]'>
       <div>
-        <p>{type}</p>
+        <p className='text-[#c9e2df]'>{type}</p>
         <p>/ person</p>
       </div>
-      <p>${value.toFixed(2)}</p>
+      <p className='text-[#24b7a4] text-4xl'>${value.toFixed(2)}</p>
     </div>
   );
   
