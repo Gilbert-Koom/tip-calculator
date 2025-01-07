@@ -35,7 +35,7 @@ function People() {
       </div>
       <div className="relative inline-block w-full">
         <Input type="number" 
-          className="bg-[#f3f8fb] rounded-[5px] w-full"
+          className="text-right bg-[#f3f8fb] rounded-[5px] w-full"
           onChange={(e)=>updater(parseFloat(e.target.value))}
           value={people}
           min={0}
